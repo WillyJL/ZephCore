@@ -6,45 +6,46 @@ mkdir -p firmware
 COMMIT_HASH=$(git rev-parse --short HEAD)
 
 nRF_boards=(
-    rak4631
-    rak3401_1watt
-    wio_tracker_l1
-    t1000_e
-    thinknode_m1
-    thinknode_m3
-    thinknode_m6
-    rak_wismesh_tag
-    ikoka_nano_30dbm
-    sensecap_solar
-    xiao_nrf52840
-    lilygo_techo
-    lilygo_timpulse_plus
-    promicro_sx1262
-    heltec_t114
-    heltec_t096
-    gat562_30s
+    # rak4631
+    # rak3401_1watt
+    # wio_tracker_l1
+    # t1000_e
+    # thinknode_m1
+    # thinknode_m3
+    # thinknode_m6
+    # rak_wismesh_tag
+    # ikoka_nano_30dbm
+    # sensecap_solar
+    # xiao_nrf52840
+    # lilygo_techo
+    # lilygo_timpulse_plus
+    # promicro_sx1262
+    # heltec_t114
+    # heltec_t096
+    # gat562_30s
+    muziworks_r1neo
 )
 
 # Native-Linux presets (not Zephyr boards — built with -b native_sim plus an
 # EXTRA_CONF_FILE). Each targets a real SBC arch, so it is cross-compiled.
 Linux_boards=(
     femtofox
-    rak6421
-    rak6421_pi5
+    # rak6421
+    # rak6421_pi5
 )
 
 ESP32_boards=(
     xiao_esp32c3
-    xiao_esp32c6/esp32c6/hpcore
-    xiao_esp32s3/esp32s3/procpu
-    lilygo_tlora_c6/esp32c6/hpcore
-    station_g2/esp32s3/procpu
-    heltec_wifi_lora32_v3/esp32s3/procpu
-    heltec_wifi_lora32_v4/esp32s3/procpu
-    heltec_wifi_lora32_v43/esp32s3/procpu
-    heltec_wireless_tracker/esp32s3/procpu
-    heltec_wireless_tracker_v2/esp32s3/procpu
-    ttgo_tbeam/esp32/procpu
+    # xiao_esp32c6/esp32c6/hpcore
+    # xiao_esp32s3/esp32s3/procpu
+    # lilygo_tlora_c6/esp32c6/hpcore
+    # station_g2/esp32s3/procpu
+    # heltec_wifi_lora32_v3/esp32s3/procpu
+    # heltec_wifi_lora32_v4/esp32s3/procpu
+    # heltec_wifi_lora32_v43/esp32s3/procpu
+    # heltec_wireless_tracker/esp32s3/procpu
+    # heltec_wireless_tracker_v2/esp32s3/procpu
+    # ttgo_tbeam/esp32/procpu
 )
 
 if [[ $1 == "nrf" ]]; then
