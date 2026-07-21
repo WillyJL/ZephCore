@@ -1,0 +1,216 @@
+{
+  "description": "ZephCore is an independent, ground-up implementation of the MeshCore protocol on the Zephyr RTOS. It is wire-compatible with stock MeshCore and adds features such as an adaptive contention window, LoRa RX duty-cycling, and support for additional boards. Companion (BLE + USB), Repeater, and native-Linux builds are provided.",
+  "maker": {
+    "femtofox": {
+      "name": "Femtofox"
+    },
+    "muziworks": {
+      "name": "muzi works"
+    },
+    "seeed": {
+      "name": "Seeed Studio"
+    }
+  },
+  "device": [
+    {
+      "maker": "muziworks",
+      "class": "zephcore",
+      "name": "muzi works R1 Neo",
+      "type": "nrf52",
+      "firmware": [
+        {
+          "role": "companionBle",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash",
+                  "name": "muziworks_r1neo-companion-e793999.zip",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-companion-e793999.zip",
+                  "title": "DFU package (install or update over USB)"
+                },
+                {
+                  "type": "download",
+                  "name": "muziworks_r1neo-companion-e793999.uf2",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-companion-e793999.uf2",
+                  "title": "UF2 -- drag-and-drop onto the bootloader drive"
+                }
+              ]
+            }
+          },
+          "erase": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/SoftDevice_v6_formatter.zip"
+        },
+        {
+          "role": "companionUsb",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash",
+                  "name": "muziworks_r1neo-companion-e793999.zip",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-companion-e793999.zip",
+                  "title": "DFU package (install or update over USB)"
+                },
+                {
+                  "type": "download",
+                  "name": "muziworks_r1neo-companion-e793999.uf2",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-companion-e793999.uf2",
+                  "title": "UF2 -- drag-and-drop onto the bootloader drive"
+                }
+              ]
+            }
+          },
+          "erase": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/SoftDevice_v6_formatter.zip"
+        },
+        {
+          "role": "repeater",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash",
+                  "name": "muziworks_r1neo-repeater-e793999.zip",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-repeater-e793999.zip",
+                  "title": "DFU package (install or update over USB)"
+                },
+                {
+                  "type": "download",
+                  "name": "muziworks_r1neo-repeater-e793999.uf2",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/muziworks_r1neo-repeater-e793999.uf2",
+                  "title": "UF2 -- drag-and-drop onto the bootloader drive"
+                }
+              ]
+            }
+          },
+          "erase": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/SoftDevice_v6_formatter.zip"
+        }
+      ]
+    },
+    {
+      "maker": "seeed",
+      "class": "zephcore",
+      "name": "Seeed Studio Xiao C3",
+      "type": "esp32",
+      "firmware": [
+        {
+          "role": "companionBle",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash-wipe",
+                  "name": "xiao_esp32c3-companion-e793999-merged.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-companion-e793999-merged.bin",
+                  "title": "Full install (bootloader + firmware)"
+                },
+                {
+                  "type": "flash-update",
+                  "name": "xiao_esp32c3-companion-e793999-update.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-companion-e793999-update.bin",
+                  "title": "Update (app only; keeps settings)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "role": "companionUsb",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash-wipe",
+                  "name": "xiao_esp32c3-companion-e793999-merged.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-companion-e793999-merged.bin",
+                  "title": "Full install (bootloader + firmware)"
+                },
+                {
+                  "type": "flash-update",
+                  "name": "xiao_esp32c3-companion-e793999-update.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-companion-e793999-update.bin",
+                  "title": "Update (app only; keeps settings)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "role": "repeater",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "flash-wipe",
+                  "name": "xiao_esp32c3-repeater-e793999-merged.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-repeater-e793999-merged.bin",
+                  "title": "Full install (bootloader + firmware)"
+                },
+                {
+                  "type": "flash-update",
+                  "name": "xiao_esp32c3-repeater-e793999-update.bin",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/xiao_esp32c3-repeater-e793999-update.bin",
+                  "title": "Update (app only; keeps settings)"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "maker": "femtofox",
+      "class": "zephcore",
+      "name": "Femtofox (Luckfox Pico Mini)",
+      "type": "noflash",
+      "firmware": [
+        {
+          "role": "companionTcp",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "download",
+                  "name": "zephcore_linux_femtofox-companion-e793999",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/zephcore_linux_femtofox-companion-e793999",
+                  "title": "Linux executable (download and run)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "role": "repeater",
+          "version": {
+            "1.16.6-zephcore": {
+              "notes": "",
+              "files": [
+                {
+                  "type": "download",
+                  "name": "zephcore_linux_femtofox-repeater-e793999",
+                  "url": "https://cdn.jsdelivr.net/gh/WillyJL/ZephCore@firmware-dist/zephcore_linux_femtofox-repeater-e793999",
+                  "title": "Linux executable (download and run)"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "tooltip": "<img class='device' src='https://cdn.jsdelivr.net/gh/meshcore-dev/flasher.meshcore.io@main/img/lora.svg'>"
+    }
+  ],
+  "role": {
+    "companionTcp": {
+      "icon": "lan",
+      "title": "Companion",
+      "subTitle": "TCP",
+      "tooltip": "Native-Linux companion radio -- connect over TCP."
+    }
+  }
+}
